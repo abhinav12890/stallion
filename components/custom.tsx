@@ -32,7 +32,7 @@ export default function Custom({
         </div>
         <div className="w-full p-4 sm:p-10 text-center">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-justify">
             {description}
           </p>
         </div>

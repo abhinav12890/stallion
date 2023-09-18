@@ -42,7 +42,7 @@ export default function Project({
         </div>
         <div className="w-1/2 p-4 sm:p-10">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-justify">
             {description}
           </p>
           <div className="mt-4">

@@ -24,23 +24,23 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About Us</SectionHeading>
-      <p className="mb-3">
+      <p className="mb-3 text-justify">
         Joy Singh - Passed out from BTech ECE and specializes in Digital Electronics, designing with 3 research papers to his name and is currently working as Network Engineer in BT Group.
       </p>
-      <p className="mb-3">
+      <p className="mb-3 text-justify">
         Sudhanshu Kr. Jha - Passed out BTech ECE undergraduate and specializes in analog electronics and has 3 research papers under his name.
       </p>
-      <p className="mb-3">
+      <p className="mb-3 text-justify">
         Sukrit Ranjan Goswami - Graduated from Shaheed Bhagat Singh college, Delhi University and has 2 years of corporate experience as Senior Analyst at Deloitte USI.
       </p>
-      <p className="mb-3">
+      <p className="mb-3 text-justify">
         Yash Bhardwaj - An undergrad of BTech ECE. He has proficiency in designing, testing as well as media outreach and validation.
       </p>
       <strong>OUR STATUS</strong>
-      <p className="mb-3">
+      <p className="mb-3 text-justify">
         Currently we have created a Minimal Viable product and are currently focusing on quality and fabrication of In-house electronics.
       </p>
-      <p className="mb-3">
+      <p className="mb-3 text-justify">
         We have our own vendors for fabrication, Assembly, and Powder coating based out of Delhi NCR itself.
         We have established our base of operation in Faridabad, Haryana which is equipped with state of the art computers for designing and electronics simulation.
         We are currently working on two more designs which shall be launched within 10 months along with a partnership with local bike and cycle vendors used as our retail partners.
@@ -75,7 +75,7 @@ export default function About() {
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75 text-justify">
                 {item.description}
               </p>
             </VerticalTimelineElement>

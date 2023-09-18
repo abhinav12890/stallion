@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="mb-10 px-4 text-center text-gray-500">
+    <footer className="mb-1 text-center text-gray-500">
       <small className="mb-2 block text-xs">
         &copy; 2023 Stallion Technologies. All rights reserved.
       </small>
@@ -11,6 +11,9 @@ export default function Footer() {
         React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
         Framer Motion, React Email & Resend, Vercel hosting.
       </p>
+      <div className="mt-auto bg-black text-gray-500 py-2">
+        <p className="text-sm">Coming Soon</p>
+      </div>
     </footer>
   );
 }
