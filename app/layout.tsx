@@ -6,14 +6,13 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
-import Horse from "@/public/logo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Stallion Technologies |  E-bikes",
   description: "City Crawler: Your perfect urban mobility solution with speeds up to 25kmph, a range of 55Kms, and customizable options to suit your style and needs. Choose from 36V or 48V variants, starting at just $49,999.",
-  image: Horse.src,
+  image: "/logo.png"
 };
 
 export default function RootLayout({
@@ -23,24 +22,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        />
-        <title>{metadata.title}</title>
-        <meta
-          name="description"
-          content={metadata.description}
-        />
-        {/* Add any additional meta tags you need here */}
-        <meta
-          property="og:image"
-          content={metadata.image}
-        />
-        {/* Add other Open Graph (og:) tags as needed */}
-      </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-20 sm:pt-28 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
