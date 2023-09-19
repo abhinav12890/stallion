@@ -2,7 +2,6 @@
 "use client";
 
 import { DefaultSeo } from 'next-seo';
-import Horse from "@/public/logo.png";
 
 const SEO = () => (
   <DefaultSeo
@@ -13,7 +12,7 @@ const SEO = () => (
       description: 'Pick your E-bikes',
       images: [
         {
-          url: 'https://stallion-tau.vercel.app/' + Horse.src, // Use the imported image source
+          url: '/logo.png', // Use the relative path to the image in the public folder
           width: 1200,
           height: 630,
           alt: 'Stallion Technologies',
