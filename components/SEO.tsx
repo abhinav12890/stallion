@@ -1,6 +1,6 @@
 // components/SEO.tsx
 "use client";
-
+// components/SEO.tsx
 import { DefaultSeo } from 'next-seo';
 
 // Define a TypeScript interface for props
@@ -32,4 +32,3 @@ const SEO = ({ metadata }: SEOProps) => (
 );
 
 export default SEO;
-

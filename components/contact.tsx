@@ -33,8 +33,8 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+        <a className="underline" href="mailto:stalliontechnologies.mr@gmail.com">
+          stalliontechnologies.mr@gmail.com
         </a>{" "}
         or through this form.
       </p>
@@ -69,6 +69,8 @@ export default function Contact() {
         />
         <SubmitBtn />
       </form>
+      <p className="font-light mt-8 mb-3 text-justify">Join us on the journey to a more sustainable and exciting future of transportation. Whether you're a daily commuter, an off-road adventurer, or a leisurely cruiser, Stallion Technologies has the perfect electric bike for you. Explore our range, and let's embark on this electrifying ride together!</p>
+      <p className="font-medium mt-8 mb-3 text-justify  text-gray-700 dark:text-white/70">Thank you for choosing Stallion Technologies – where innovation, sustainability, and adventure meet on two wheels.</p>
     </motion.section>
   );
 }

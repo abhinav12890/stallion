@@ -12,7 +12,7 @@ import SectionDivider from "@/components/section-divider";
 
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About Us");
   const { theme } = useTheme();
 
   return (
@@ -26,29 +26,34 @@ export default function About() {
     >
       <SectionHeading>About us</SectionHeading>
       <p className="mb-3 text-justify">
-        Joy Singh - Passed out from BTech ECE and specializes in Digital Electronics, designing with 3 research papers to his name and is currently working as Network Engineer in BT Group.
+        Welcome to Stallion Technologies, your premier destination for custom electric bikes that redefine the way you ride. Our passion for innovation, sustainability, and adventure has led us to craft exceptional electric bikes tailored to your unique needs and desires.
       </p>
+      
+      <SectionHeading >Our Story</SectionHeading>
       <p className="mb-3 text-justify">
-        Sudhanshu Kr. Jha - Passed out BTech ECE undergraduate and specializes in analog electronics and has 3 research papers under his name.
-      </p>
+        Stallion Technologies was founded by a group of avid cyclists and electric vehicle enthusiasts who shared a common vision – to revolutionize urban transportation while preserving the environment. Our journey began with a simple idea: to build electric bikes that blend cutting-edge technology with impeccable design, providing riders with a thrilling and eco-friendly alternative for commuting, exploration, and recreation.
+        With years of research and development, we've transformed this vision into a reality. Today, we proudly offer a range of customizable electric bikes that cater to a diverse range of riders, from city commuters seeking an eco-friendly solution to off-road adventurers craving thrilling rides through challenging terrains.      </p>
+      
+      <SectionHeading>Our Mission</SectionHeading>
       <p className="mb-3 text-justify">
-        Sukrit Ranjan Goswami - Graduated from Shaheed Bhagat Singh college, Delhi University and has 2 years of corporate experience as Senior Analyst at Deloitte USI.
-      </p>
-      <p className="text-justify">
-        Yash Bhardwaj - An undergrad of BTech ECE. He has proficiency in designing, testing as well as media outreach and validation.
-      </p>
-      <div className="flex flex-col items-center px-2"><SectionDivider /></div>
-      <SectionHeading>Recent updates</SectionHeading>
+      At Stallion Technologies, our mission is to empower people to embrace a greener, healthier, and more exciting way of commuting and exploring the world. We are dedicated to: </p>
+      <ul className="list-disc">
+        <li className="mb-3 text-justify">Quality Craftsmanship: Our electric bikes are meticulously crafted using the highest-quality materials and components to ensure unmatched performance, durability, and style.</li>
+        <li className="mb-3 text-justify">Sustainability: We are committed to reducing our carbon footprint and contributing to a cleaner planet. Our electric bikes produce zero emissions and promote sustainable transportation.</li>
+        <li className="mb-3 text-justify">Customization: We believe that every rider is unique, which is why we offer a wide range of customization options. Tailor your bike to your exact specifications, ensuring it meets your preferences and needs perfectly.</li>
+        <li className="mb-3 text-justify">Innovation: We stay at the forefront of technology, continually researching and implementing the latest advancements in electric bike design to deliver bikes that offer cutting-edge features and an unparalleled riding experience.</li>
+      </ul>
+
+      <SectionHeading>Why Choose Stallion Technologies?</SectionHeading>
       <p className="mb-3 text-justify">
-        Currently we have created a Minimal Viable product and are currently focusing on quality and fabrication of In-house electronics.
-      </p>
-      <p className="text-justify">
-        We have our own vendors for fabrication, Assembly, and Powder coating based out of Delhi NCR itself.
-        We have established our base of operation in Faridabad, Haryana which is equipped with state of the art computers for designing and electronics simulation.
-        We are currently working on two more designs which shall be launched within 10 months along with a partnership with local bike and cycle vendors used as our retail partners.
-        Our plan is to sell about 1000+ bikes for the upcoming 18 months.
-      </p>
-      <div className="flex flex-col items-center px-2"><SectionDivider /></div>
+      Unparalleled Expertise: Our team comprises experienced engineers, designers, and cycling enthusiasts who are passionate about creating the best electric bikes on the market. </p>
+      <ul className="list-disc">
+        <li className="mb-3 text-justify">Customer-Centric Approach: We put our customers first. Your satisfaction is our top priority, and we're always here to assist you with any questions, concerns, or custom requests.</li>
+        <li className="mb-3 text-justify">Customization Options: Create a bike that reflects your personality and riding style. From frame color to battery capacity, we offer a wide array of options to ensure your bike is truly one-of-a-kind.</li>
+        <li className="mb-3 text-justify">Environmental Commitment: By choosing an electric bike from us, you're actively contributing to a cleaner, greener planet.</li>
+        <li className="mb-3 text-justify">Exceptional Value: We believe in providing the highest quality at competitive prices, ensuring you get the best value for your investment.</li>
+      </ul>     
+
       <SectionHeading>Milestone</SectionHeading>
       <VerticalTimeline lineColor="">
         {milestonesData.map((item, index) => (
