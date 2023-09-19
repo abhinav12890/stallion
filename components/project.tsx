@@ -1,3 +1,4 @@
+"use client";
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
@@ -8,6 +9,8 @@ type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
+  speed,
+  range,
   imageUrl,
   availability,
   price,
@@ -30,9 +33,8 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section
-        className={`bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative ${
-          imageUrl ? "sm:flex" : "" // Only apply flex on larger screens if there's an image
-        } sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20`}
+        className={`bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative ${imageUrl ? "sm:flex" : ""
+          } sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20`}
       >
         {imageUrl && (
           <div className="w-full sm:w-1/2 p-4 sm:p-10">
@@ -40,28 +42,33 @@ export default function Project({
               src={imageUrl}
               alt="Project I worked on"
               quality={95}
-              className="w-full rounded-lg shadow-2xl transition group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-even:right-[initial] group-even:-left-40"
+              className="w-full rounded-lg shadow-2xl transition-transform transform scale-100 group-hover:scale-110"
             />
           </div>
         )}
         <div
-          className={`w-full sm:w-1/2 p-4 sm:p-10 ${
-            imageUrl ? "sm:mt-0" : "" // Add margin-top if there's no image
-          }`}
+          className={`w-full sm:w-1/2 p-4 sm:p-10 relative ${imageUrl ? "sm:mt-0" : ""
+            }`}
         >
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-justify">
             {description}
           </p>
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-justify">
+            {speed}
+          </p>
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-justify">
+            {range}
+          </p>
+          <div className="mt-2 text-gray-700 dark:text-white/70">
+            {availability}
+          </div>
+          <div className="mt-2 font-semibold text-gray-800 dark:text-white">
+            Price: {price}
+          </div>
           <div className="mt-4">
-            <div className="mb-2 text-gray-700 dark:text-white/70">
-              {availability}
-            </div>
-            <div className=" font-semibold text-gray-800 dark:text-white">
-              Price: {price}
-            </div>
-            <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
-              Contact
+            <button className="hidden sm:block bg-blue-500 text-white py-1 px-2 rounded hover:bg-blue-600 absolute bottom-4">
+              <a href="#contact">Contact</a>
             </button>
           </div>
         </div>

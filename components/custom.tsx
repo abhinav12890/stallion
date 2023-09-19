@@ -27,7 +27,7 @@ export default function Custom({
       className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="bg-gray-100 max-w-[20rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20 flex flex-col items-center h-[20rem]"> {/* Set a fixed height */}
-        <div className="mt-4 text-4xl">
+        <div className="mt-4 text-4xl ">
           {icon}
         </div>
         <div className="w-full p-4 sm:p-10 text-center">

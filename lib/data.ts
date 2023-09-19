@@ -65,38 +65,41 @@ export const milestonesData = [
 
 export const projectsData = [
   {
-    title: " City Crawler",
-    description:
-      "Best suited to urban jungle Speed - 25kmph Range - 55Kms",
+    title: "City Crawler",
+    description: "Best suited to urban jungle",
+    speed: "Speed - 25kmph",
+    range: "Range - 55Kms",
     imageUrl: product1Img,
-    availability: "Avaialble in 36V and 48V variants", // Add availability here
-    price: "Rs:49999 and Rs:54999", // Add price here
+    availability: "Available in 36V and 48V variants",
+    price: "Rs:49999 and Rs:54999",
   },
   {
-    title: " Ultra dune",
-    description:
-      "mobility for a rough terrain Speed - 35kmph Range - 60Kms",
+    title: "Ultra Dune",
+    description: "Mobility for rough terrain",
+    speed: "Speed - 35kmph",
+    range: "Range - 60Kms",
     imageUrl: product2Img,
-    availability: "Avaialble in 48V, high torque", // Add availability here
-    price: "Rs:58999", // Add price here
+    availability: "Available in 48V variant only, High torque",
+    price: "Rs:58999",
   },
 ] as const;
+
 
 export const customsData = [
   {
     title: "Colour",
     icon: React.createElement(IoIosColorPalette),
-    description: "we are offering 20 deafult color variants and with some addtional cost we can offer more any other requested color option",
+    description: "We are offering 20 deafult color variants and with some addtional cost we can offer more any other requested color option",
   },
   {
     title: "Personal Touch",
     icon: React.createElement(AiFillTool),
-    description: "an area specifically designed based on your needs, add engraving, add your initials and many more to make your ride more you.",
+    description: "An area specifically designed based on your needs, add engraving, add your initials and many more to make your ride more you.",
   },
   {
     title: "Seat and Mods",
     icon: React.createElement(GiCarSeat), 
-    description: "select your own seat types based on our 3 offered designs, along with modifications based on your daily suited needs",
+    description: "Select your own seat types based on our 3 offered designs, along with modifications based on your daily suited needs",
   },
 ] as const;
 

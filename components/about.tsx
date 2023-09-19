@@ -6,8 +6,9 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { milestonesData } from "@/lib/data"; 
+import { milestonesData } from "@/lib/data";
 import { useTheme } from "@/context/theme-context";
+import SectionDivider from "@/components/section-divider";
 
 
 export default function About() {
@@ -23,7 +24,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About Us</SectionHeading>
+      <SectionHeading>About us</SectionHeading>
       <p className="mb-3 text-justify">
         Joy Singh - Passed out from BTech ECE and specializes in Digital Electronics, designing with 3 research papers to his name and is currently working as Network Engineer in BT Group.
       </p>
@@ -33,21 +34,22 @@ export default function About() {
       <p className="mb-3 text-justify">
         Sukrit Ranjan Goswami - Graduated from Shaheed Bhagat Singh college, Delhi University and has 2 years of corporate experience as Senior Analyst at Deloitte USI.
       </p>
-      <p className="mb-3 text-justify">
+      <p className="text-justify">
         Yash Bhardwaj - An undergrad of BTech ECE. He has proficiency in designing, testing as well as media outreach and validation.
       </p>
-      <strong>OUR STATUS</strong>
+      <div className="flex flex-col items-center px-2"><SectionDivider /></div>
+      <SectionHeading>Recent updates</SectionHeading>
       <p className="mb-3 text-justify">
         Currently we have created a Minimal Viable product and are currently focusing on quality and fabrication of In-house electronics.
       </p>
-      <p className="mb-3 text-justify">
+      <p className="text-justify">
         We have our own vendors for fabrication, Assembly, and Powder coating based out of Delhi NCR itself.
         We have established our base of operation in Faridabad, Haryana which is equipped with state of the art computers for designing and electronics simulation.
         We are currently working on two more designs which shall be launched within 10 months along with a partnership with local bike and cycle vendors used as our retail partners.
         Our plan is to sell about 1000+ bikes for the upcoming 18 months.
       </p>
-
-      <strong>MILESTONES</strong>
+      <div className="flex flex-col items-center px-2"><SectionDivider /></div>
+      <SectionHeading>Milestone</SectionHeading>
       <VerticalTimeline lineColor="">
         {milestonesData.map((item, index) => (
           <React.Fragment key={index}>

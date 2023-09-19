@@ -11,7 +11,7 @@ export default function Customization() {
 
   return (
     <section id="customization" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>Custom Products</SectionHeading>
+      <SectionHeading>Customizations Offered</SectionHeading>
       <div className="flex flex-wrap justify-center ">
         {customsData.map((custom, index) => (
           <React.Fragment key={index}>
