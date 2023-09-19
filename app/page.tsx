@@ -8,7 +8,7 @@ import Location from "@/components/location";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
+    <main className="flex flex-col items-center px-2">
       <Intro />
       <SectionDivider />
       <Products />

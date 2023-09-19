@@ -11,7 +11,7 @@ export default function Footer() {
         React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
         Framer Motion, React Email & Resend, Vercel hosting.
       </p>
-      <div className="mt-auto bg-black text-gray-500 py-2">
+      <div className="mt-auto bg-black text-white py-2">
         <p className="text-sm">Coming Soon</p>
       </div>
     </footer>

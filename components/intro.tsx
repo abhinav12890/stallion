@@ -17,7 +17,7 @@ export default function Intro() {
     };
     startVideoAutoplay();
   }, []);
-<div className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque nemo sed incidunt architecto repellat sit omnis libero, saepe praesentium nostrum dolores! Deserunt aliquid cum amet, harum aperiam expedita animi!</div>
+
   return (
     <section
       ref={ref}
@@ -27,15 +27,19 @@ export default function Intro() {
       <video
         ref={videoRef}
         controls
-        width="100%" 
-        height="auto" 
+        style={{
+          width: "100%", // Set the video width to 100% to make it full width
+          height:"auto",
+          margin: 0,       // Remove margin
+          padding: 0,      // Remove padding
+        }}
         autoPlay
         loop
+        muted
       >
         <source src="https://res.cloudinary.com/dsx8hhhjz/video/upload/stallon/wve6gdvnjcsrjmzs9gjl.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      
     </section>
   );
 }
