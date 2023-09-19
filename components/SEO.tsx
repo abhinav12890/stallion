@@ -1,30 +1,24 @@
 // components/SEO.tsx
 "use client";
+
 // components/SEO.tsx
+
 import { DefaultSeo } from 'next-seo';
+import Horse from "@/public/logo.png";
 
-// Define a TypeScript interface for props
-interface SEOProps {
-  metadata: {
-    title: string;
-    description: string;
-    image: string;
-  };
-}
-
-const SEO = ({ metadata }: SEOProps) => (
+const SEO = () => (
   <DefaultSeo
     openGraph={{
       type: 'website',
       url: 'https://stallion-tau.vercel.app/',
-      title: metadata.title,
-      description: metadata.description,
+      title: 'Stallion Technologies',
+      description: 'Pick your E-bikes',
       images: [
         {
-          url: metadata.image,
+          url: 'https://stallion-tau.vercel.app' + Horse.src, // Use the imported image source
           width: 1200,
           height: 630,
-          alt: 'Your Image Alt Text', // Provide a suitable alt text
+          alt: 'Stallion Technologies',
         },
       ],
     }}

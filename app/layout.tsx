@@ -1,4 +1,3 @@
-// layout.tsx
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -7,14 +6,12 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
-import SEO from "@/components/SEO";
 import Horse from "@/public/logo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// Define the metadata object
-const metadata = {
-  title: "Stallion Technologies | E-bikes",
+export const metadata = {
+  title: "Stallion Technologies |  E-bikes",
   description: "City Crawler: Your perfect urban mobility solution with speeds up to 25kmph, a range of 55Kms, and customizable options to suit your style and needs. Choose from 36V or 48V variants, starting at just $49,999.",
   image: Horse.src,
 };
@@ -34,7 +31,6 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <SEO metadata={metadata} />
             <Header />
             {children}
             <Footer />
