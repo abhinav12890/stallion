@@ -9,10 +9,10 @@ import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Stallion Technologies |  E-bikes",
-  description: "City Crawler: Your perfect urban mobility solution with speeds up to 25kmph, a range of 55Kms, and customizable options to suit your style and needs. Choose from 36V or 48V variants, starting at just $49,999.",
-};
+// export const metadata = {
+//   title: "Stallion Technologies |  E-bikes",
+//   description: "City Crawler: Your perfect urban mobility solution with speeds up to 25kmph, a range of 55Kms, and customizable options to suit your style and needs. Choose from 36V or 48V variants, starting at just $49,999.",
+// };
 
 export default function RootLayout({
   children,
