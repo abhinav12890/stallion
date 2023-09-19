@@ -23,6 +23,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
+        <title>{metadata.title}</title>
+        <meta
+          name="description"
+          content={metadata.description}
+        />
+        {/* Add any additional meta tags you need here */}
+        <meta
+          property="og:image"
+          content={metadata.image}
+        />
+        {/* Add other Open Graph (og:) tags as needed */}
+      </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-20 sm:pt-28 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
